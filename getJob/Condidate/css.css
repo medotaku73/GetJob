@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins';
+}
+body{
+    background-color: #f7f6f2;
+}
+
+
+/* repeated css*/
+.v-box{
+    display: flex;
+    flex-direction: column;
+}
+.h-box{
+    display: flex;
+}
+.flex-align-center{
+    align-items: center;
+}
+.fa-solid{
+    font-size: 18px;
+}
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-space-between{
+    justify-content: space-between;
+}
+.flex-demi{
+    flex: 0.5 0 0%;
+}
+
+
+
+/* menu css */
+
+.menu{
+    background-color: #fff;
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+}
+.menu h1{
+    margin: 10px;
+}
+.menu h1::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: orange;
+}
+.link-nod {
+    color: black;
+    text-decoration: none;
+}
+.nods{
+    margin: 100px 0;
+}
+.nods i{
+    padding: 3px 0 3px 18px;
+}
+.nods table{
+    margin-bottom: 30px ;
+    border-spacing: 0 25px;
+}
+.nods table tr:hover, .nods table tr a:hover{
+    color: orange;
+    cursor: pointer;
+    transition: 200ms;
+}
+.current-nod{
+    border-left: 3px solid orange;
+    color: orange;
+}
+.current-link{
+    color: orange;
+}
+.nods h5{
+    margin-left: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+/* content */
+
+
+.content{
+    float: right;
+    margin-right: 70px;
+}
+
+
+
+/* cover */
+.content .main{
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    border-radius: 12px;
+    row-gap: 25px;
+    box-shadow: 0px 0px 5px #d1d1d1;
+}
+.content .main .cover{
+    width: 1180px;
+    height: 200px;
+    background-image: url(media/109676.jpg);
+    background-size: cover;
+    border-radius: 12px;
+}
+.content .main .img-profil{
+    position: absolute;
+}
+.content .main .img-profil{
+    background-color: #fff;
+    top: 150px;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.content .main h1{
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    font-size: 60px;
+}
+
+/* condidate */
+.list-cond{
+    column-gap: 20px;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin-top: 50px;
+    row-gap: 20px;
+}
+.content .cond{
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px #d1d1d1;
+}
+.content .cond .section{
+    border-top: 1px solid rgb(235, 235, 235);
+    padding: 10px;
+    background-color: #fff;
+}
+.content .cond .section label, .cond p{
+    color: #d1d1d1;
+    font-size: 12px;
+}
+.content .cond .section input, .content .cond textarea{
+    background-color: #ededed;
+    outline: none;
+    border: 1px solid #dedede; 
+    border-radius: 2px;
+}
+.cond a {
+    background-color: rgb(255, 240, 212);
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn-input input{
+    cursor: pointer;
+    font-size: 12px;
+}
+.btn-input input:hover{
+    background-color: transparent;
+
+}
+
+.btn-input a{
+    border-radius: 4px;
+    font-size: 12px;
+    color: red;
+}
+
+.list-cond .messg{
+    color: #d1d1d1;
+    margin: 300px 0;
+}
+
+/* add cond */
+.content .add-cond{
+    border-radius: 12px;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0 0 15px #d1d1d1;
+    padding: 10px;
+    width: 800px;
+    margin: 150px 0;
+}
+.content .add-cond .v-box input{
+    height: 25px;
+    width: -webkit-fill-available;
+    background-color: rgb(255, 248, 234);
+    border: 1px solid rgb(247, 234, 210);
+    outline: none;
+}
+
+.content .add-cond .h-box input[type="submit"]{
+    background-color: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15px;
+}
+.content .add-cond .h-box input[type="reset"]{
+    background-color: transparent;
+    color: #d1d1d1;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15px;
+}
+.content .add-cond input[type="file"]{
+    background-color: transparent;
+    border: none;
+}
+.content .add-cond .gap-c{
+    column-gap: 10px;
+}
+
+.tips{
+    color: #b5b5b5;
+    margin: 60px 0;
+}
+.tips span{
+    color: orange;
+}
+.tips div{
+    margin: 20px 0;
+}

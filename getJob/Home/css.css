@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    padding: 0;
+    color: #000000;
+}
+body{
+    background-color: #f7f6f2;
+    height: 200vh;
+}
+
+
+/* repeated css*/
+.v-box{
+    display: flex;
+    flex-direction: column;
+}
+.h-box{
+    display: flex;
+}
+.flex-align-center{
+    align-items: center;
+}
+.fa-solid{
+    font-size: 18px;
+}
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-space-between{
+    justify-content: space-between;
+}
+
+/* nav box */
+.nav-box{
+    background-image: url(media/109676.jpg);
+    background-size: cover;
+    padding: 5px 5px 180px ;
+    width: 100%;
+
+    position: relative;
+}
+.nav-box h1{
+    color: orange;
+}
+.nav-box h1::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: orange;
+}
+.nav-box h1 span{
+    color: #fff;
+}
+.nav-box .nod-link a{
+    margin: 0px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: transform 0.5s;
+}
+.nav-box .nod-link a:hover{
+    font-weight: bolder;
+    transform: scale(1.08);
+}
+.nav-box .profil-nod{
+    column-gap: 2px;
+}
+.nav-box .profil-nod img{
+    border-radius: 50%;
+}
+.nav-box .profil-nod .fa-sharp{
+    color: #fff;
+    font-size: 14px;
+}
+.nav-box .profil-nod button{
+    background-color: transparent;
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    column-gap: 3px;
+}
+.nav-box .profil-nod button:hover{
+    cursor: pointer;
+}
+
+/* seach input */
+.search{
+    position: absolute; 
+    bottom: -10%;
+    left: 28%; 
+}
+.search .v-box{
+    height: 60px;
+    width: 500px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 11px 0px #c4c4c4;
+}
+.search .v-box label{
+    font-size: 14px;
+    color: #9c9c9c;
+}
+.search .v-box input[type="text"]{
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+    outline: none;
+}
+.search #btn-search{
+    background-color: orange;
+    border-radius: 8px;
+    padding: 18px;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 11px 0px #c4c4c4;
+
+}
+.search #btn-search:hover{
+    transform: scale(1.08);
+}
+.search .fa-solid{
+    color: #fff;
+    margin-right: 2px;
+}
+.search #btn-search input{
+    background-color: transparent;
+    border: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.search #btn-search input{
+    cursor: pointer;
+}
+.search::before{
+    content: "Trouver un Travail Maintenant";
+    display: block;
+    color: orange;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+/* filter */
+.filter{
+    width: 240px;
+    left: 0;
+    top: 33%;
+    padding: 5px 20px;
+}
+.filter h2, .notify h2{
+    color: orange;
+}
+.filter hr{
+    opacity: 0.2;
+}
+.filter h4{
+    font-size: 12px;
+    color: #9c9c9c;
+    margin: 5px 0;
+}
+.filter table {
+    margin: 10px 0;
+}
+.filter table tr td p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+.filter .filter-header{
+    width: 100%;
+    column-gap: 100px;
+}
+.filter .filter-header p{
+    font-size: 12px;
+    color: #9c9c9c;
+    transition: transform 0.2s ease-in-out;
+}
+.filter .filter-header p:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+}
+.filter select{
+    outline: none;
+    border:2px solid rgb(235, 232, 227);
+    background-color: transparent;
+    height: 35px;
+    border-radius: 12px;
+    color: #9c9c9c;
+}
+.filter select::-ms-expand{
+    display: none;
+}
+.filter select option{
+    background-color: transparent;
+}
+
+/* notify */
+.notify a{
+    position: relative;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 12px;
+    font-weight: bolder;
+    transition-duration: 0.3s;
+}
+.notify a:hover{
+    background-color: #ececec;
+}
+.notify a span{
+    color: #a7a7a7;
+    font-size: 10px;
+}
+.notify h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius:50%;
+    height: 10px;
+    width: 10px;
+
+}
+.not-seen{
+    background-color: red;
+}
+
+/* jobs */
+.jobs{
+    width: 700px;
+    margin: 70px 0 70px 50px;
+}
+.jobs span{
+    font-size: 12px;
+    color: #a7a7a7;
+}
+.jobs .poste{
+    margin: 10px 0;
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+    width: 700px;
+}
+.jobs .entr, .info{
+    padding-left: 7px;
+}
+.jobs .salary{
+    width: 200px;
+}
+.jobs .city{
+    width: 250px;
+}
+.jobs .date{
+    width: 150px;
+}
+.jobs .grade{
+    width: 250px;
+}
+.jobs .bot-bar span{
+    padding: 5px 7px;
+}
+.jobs .bot-bar span:hover{
+    color: black;
+}
+.jobs .bot-bar{
+    background-color: #ebebeb;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 100%;
+}
+.jobs .bot-bar a{
+    padding: 2px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    border-bottom-right-radius: 12px;
+}
+.jobs .bot-bar a:hover{
+    cursor: pointer;
+    color: #000000;
+    background-color: orange;
+}
+.fetch-empty{
+    margin: 150px 0;
+    color: #a7a7a7;
+}
+.reset-search i{
+    color: #a7a7a7;
+}
+.expired {
+    color: red;
+    margin: 10px;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    position: absolute;
+}
